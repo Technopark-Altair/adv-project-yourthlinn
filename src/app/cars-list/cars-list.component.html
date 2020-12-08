@@ -1,0 +1,4 @@
+<h2>List of cars by brand:</h2>
+<a *ngFor="let car of allcars" routerLink="car/{{car['id']}}">
+  <p>Brand Name: {{car['brandName']}}</p>
+</a>
