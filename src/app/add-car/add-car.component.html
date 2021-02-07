@@ -1,0 +1,17 @@
+<form>
+  <table>
+    <tr>
+      <td>Manufacturer</td>
+      <td><input [(ngModel)]="car.brandName" name="brandName"></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><input [(ngModel)]='car.modelName' name="modelName"></td>
+    </tr>
+    <tr>
+      <td>Price (rub.)</td>
+      <td><input [(ngModel)]='car.priceInRub' name="priceInRub"></td>
+    </tr>
+  </table>
+    <button type="submit" (click)="addCarInCarsComponent()">Add new car</button>
+</form>

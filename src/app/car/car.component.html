@@ -1,8 +1,8 @@
-<h2><i>Car {{car['id']}}</i> info:</h2>
+<div *ngIf="carInput">
+<h2><i>Car {{carInput.id}}</i> info:</h2>
 <ul>
-  <li>Brand Name: {{car['brandName']}}</li>
-  <li>Model Name: {{car['modelName']}}</li>
-  <li>Price in Rubles: {{car['priceInRub']}}</li>
+  <li>Brand Name: {{carInput.brandName}}</li>
+  <li>Model Name: {{carInput.modelName}}</li>
+  <li>Price in Rubles: {{carInput.priceInRub}}</li>
 </ul>
-
-<a routerLink="">Back</a>
+</div>

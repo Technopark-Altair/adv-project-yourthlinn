@@ -22,4 +22,8 @@ export class CarService {
   getcar(id: number) {
     return this.cars[id];
   }
+  addCar(article: Car) {
+    article.id = this.getcars().length;
+    this.cars.push(article);
+  }
 }

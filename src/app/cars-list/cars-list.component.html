@@ -1,4 +1,13 @@
-<h2>List of cars by brand:</h2>
-<a *ngFor="let car of allcars" routerLink="car/{{car['id']}}">
+<h2>List of cars:</h2>
+<!-- <a *ngFor="let car of allcars" routerLink="car/{{car['id']}}">
   <p>Brand Name: {{car['brandName']}}</p>
-</a>
+</a> -->
+<div *ngFor="let car of allcars">
+  <app-car [carInput]="car"></app-car>
+</div>
+<hr>
+<div>
+  <h2>Add new car</h2>
+  <add-new-car (addedCar)="addNewCar($event)"></add-new-car>
+</div>
+
